@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Fundamentos de TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectormoreira/typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript"
+  ],
+  "author": "Hector Moreira <hector.moreirac@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hectormoreira/typescript/issues"
+  },
+  "homepage": "https://github.com/hectormoreira/typescript#readme"
+}
