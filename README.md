@@ -54,12 +54,15 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 **Tipo Any**
 - Usado para valores dinamicos, apis externas, lib de terceros
 - Debe usarse como último recurso
+
 **Tipo Void**
 - Lo opuesto de Any
 - Representa la ausencia de tipo
 - Usado en funciones que no retornan nada.
+
 **Tipo Never**
 - Representa funciones que lanzan excepciones o nunca retornan un valor.
+
 **Tipo null y undefined**
 - Se puede utlizar null y **undefined ** como tipos
 - Estos hacen que sus valores solo sean null y undefined respectivamente
