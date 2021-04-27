@@ -11,6 +11,7 @@ npm i -g typescript
 - `tsc your_file.ts` compilar fichero
 - `tsc --watch` o `tsc --watch your_file.ts` Compilar de manera automática nuestros ficheros .ts activando un watch
 - `tsc --init` crear archivo de configuración
+- `tsc src/type-null-undefined.ts --strictNullChecks` reporte de errores
 
 ## Notas
 ### Que es TypeScript
@@ -64,9 +65,23 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 - Representa funciones que lanzan excepciones o nunca retornan un valor.
 
 **Tipo null y undefined**
-- Se puede utlizar null y **undefined ** como tipos
+- Se puede utlizar `null` y `undefined` como tipos
 - Estos hacen que sus valores solo sean null y undefined respectivamente
-- Son subtipos en any
+- Se pueden considerara subtipos de any
+
+**Tipo: Null y Undefined La Opcion —strictNullChecks**
+- Solo permite asignar null y undefined a una variable de tipo any o sus tipos respectivos
+- Ayuda a evitar errores comunes en programación de apps en el ambito Javascript
+
+**Tipo object**
+- Es un tipo de dato no primitivo.
+- Declarar a una variable con el tipo object no es lo mismo que crear un Object nativo de JS
+ - Si tenemos un objeto declarado con el object de TS no podremos acceder a sus atributos mientras que si lo hacemos regularmente como en vanilla JS si podremos hacerlo.
+ -Por lo tanto declarar una variable como object de TS nos puede llegar a servir para una situacion en la que no querramos que el objeto pueda mutar.
+
+**Tipo Array**
+- Al igual que en JavaScript, TypeScript permite definir un arreglo para contener un conjunto de valores, para definir los arreglos se pueden usar nos notaciones `[]` y `Array<type>`.
+
 
 
 
@@ -74,3 +89,4 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 ## Recursos
 - [https://stackshare.io/typescript](https://stackshare.io/typescript)
 - [Node Version Manager](https://github.com/nvm-sh/nvm)
+- [Type array tuple](https://github.com/luixaviles/platzi-typescript/tree/07-array-tuple)
