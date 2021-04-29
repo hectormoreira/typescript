@@ -82,6 +82,32 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 **Tipo Array**
 - Al igual que en JavaScript, TypeScript permite definir un arreglo para contener un conjunto de valores, para definir los arreglos se pueden usar nos notaciones `[]` y `Array<type>`.
 
+**Tuple**
+- Permiten expresar un arreglo con un número fijo de elementos
+- Los tipos de datos son conocidos
+
+**Enum**
+- Permiten definir un conjunto de constantes con nombres
+- Tienen la ventaja de adaptarse al contexto de la aplicación
+
+**Union de tipos - Alias - Tipos literales**
+- union type
+- permite definir una variable con multiples tipos de datos. Se usa el pipe para unirlos
+
+**Alias de tipos**
+- Permite crear un alias como nuevo nombre para un tipo
+- El alias se puede aplicar también a un conjunto o combinación de tipos
+- Se usa la palabra reservada type
+
+**Tipos Literales**
+- Una variable con un tipo literal puede contener únicamente una cadena del conjunto
+- Se usan cadenas como "tipos" combinados con el símbolo ('`|`') entre ellos
+
+**Aserciones de tipos**
+- Cuando el programador puede conocer más que TypeScript sobre el valor de una variable
+- Es un mensaje al compilador: "Confía en mí, sé lo que hago"
+- Se parece al `casting` de otros lenguajes de programación
+- Usa dos sintáxis `<Angle brackets>` y `(variable as tipo)`
 
 
 
