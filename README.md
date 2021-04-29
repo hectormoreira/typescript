@@ -63,6 +63,7 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 
 **Tipo Never**
 - Representa funciones que lanzan excepciones o nunca retornan un valor.
+- Usar never cuando vamos a lanzar excepciones en la función.
 
 **Tipo null y undefined**
 - Se puede utlizar `null` y `undefined` como tipos
