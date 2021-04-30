@@ -110,6 +110,20 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 - Se parece al `casting` de otros lenguajes de programación
 - Usa dos sintáxis `<Angle brackets>` y `(variable as tipo)`
 
+### Tipos personalizados
+**Interfaces**
+- Constituyen una forma porderosa de definir "contratos" tanto para tu proyecto, como para el código ecterno del mismo
+
+    **Interfaces Propiedades Opcionales**
+    - No todas las propiedades de una interfaz podrían ser requeridas
+    - Establecemos una propiedad como opcional con el símbolo (`?`) después del nombre
+
+    **Interfaces Propiedades de Solo Lectura**
+    - Algunas propiedades de la interfaz podrían no ser modificables una vez creado el objeto
+    - Esto es posible usando `readonly` antes del nombre de  la propiedad
+
+
+
 
 
 
