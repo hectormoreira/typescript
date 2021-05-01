@@ -122,7 +122,12 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
     - Algunas propiedades de la interfaz podrían no ser modificables una vez creado el objeto
     - Esto es posible usando `readonly` antes del nombre de  la propiedad
 
+    **Extendiendo Interfaces**
+    - Las interfaces pueden extenderse unas de otras. Esto permite copiar los miembros ya definidos en una interfaz a otra, ganando flexibilidad y reusabilidad de componentes
 
+**Clases**
+- A partir de ECMAScript 2015 es posible construir clases y hacer uso del paradigma de POO en JS
+- TS permite aplicar estas técnicas sin tener que esperar por otra versión
 
 
 
