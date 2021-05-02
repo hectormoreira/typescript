@@ -112,7 +112,7 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 
 ### Tipos personalizados
 **Interfaces**
-- Constituyen una forma porderosa de definir "contratos" tanto para tu proyecto, como para el código ecterno del mismo
+- Constituyen una forma porderosa de definir "contratos" tanto para tu proyecto, como para el código externo del mismo
 
     **Interfaces Propiedades Opcionales**
     - No todas las propiedades de una interfaz podrían ser requeridas
