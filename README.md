@@ -125,9 +125,24 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
     **Extendiendo Interfaces**
     - Las interfaces pueden extenderse unas de otras. Esto permite copiar los miembros ya definidos en una interfaz a otra, ganando flexibilidad y reusabilidad de componentes
 
-**Clases**
+### Clases
+**Definiendo Clases y Constructores**
 - A partir de ECMAScript 2015 es posible construir clases y hacer uso del paradigma de POO en JS
 - TS permite aplicar estas técnicas sin tener que esperar por otra versión
+
+**Miembros públicos**
+- TS define un modificador de acceso público por defecto para los miembros de clase
+- También es posible marcar un miembro como público usando la palabra reservada `public`
+
+**Miembros privados**
+- TS define una manera propia de declarar o marcar un miembro como privado usando la palabra reservada `private`
+
+**Miembros privados ECMAScript**
+- TS también soporta (desde la versión 3.8) la nueva sintaxis de JS para miembros privados: `#atributo`
+- Esta característica puede ofrecer mejores garantías de aislamiento en miembros privados
+
+**Métodos Set y Get**
+- TS Soporta los métodos accesores `get` y `set` como una forma de interceptar los accesos a los miembros privados de un objeto
 
 
 
@@ -136,3 +151,6 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 - [https://stackshare.io/typescript](https://stackshare.io/typescript)
 - [Node Version Manager](https://github.com/nvm-sh/nvm)
 - [Type array tuple](https://github.com/luixaviles/platzi-typescript/tree/07-array-tuple)
+
+## Extensiones
+- [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
