@@ -10,7 +10,7 @@ npm i -g typescript
 - `tsc` busca y compilar por defecto
 - `tsc your_file.ts` compilar fichero
 - `tsc --watch` o `tsc --watch your_file.ts` Compilar de manera automática nuestros ficheros .ts activando un watch
-- `tsc --init` crear archivo de configuración
+- `tsc --init` iniciar proyecto TS y crear archivo de configuración
 - `tsc src/type-null-undefined.ts --strictNullChecks` reporte de errores
 
 ## Notas
@@ -157,6 +157,16 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 - Las clases por lo general definen atributos y métodos aplicables a las instancias de las mismas
 - A través de la palabra reservada `static` se puede definir un miembro visible a nivel de clase
 - Al igual que las `Interfaces`, podemos usar la palabra reservada `readonly` para marcar el miembro de una clase como solo lectura
+
+### Módulos
+- Los módulos en TS  proveen un mecacanismo para mejorar la organización del código y promover su reutilización
+- A partir de ECMAScript 2015, los módulos son parte nativa del lenguaje JavaScript
+
+**Importando y Exportando Módulos**
+- Generalmente se define un módulo con la idea de agrupar código relacionado
+- Podemos tomar criterios en torno a la funcionalidad, features, utilitarios, modelos, etc
+- Los miembros de módulo interactúan con el uso de las palabras reservadas `import` y `export`
+
 
 
 
