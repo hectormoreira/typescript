@@ -148,6 +148,18 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 - TS soporta este patrón común en el mundo de la POO
 - Implementa la habilidad de extender código de clases existentes a través de la `herencia`
 
+**Clases Abstractas**
+- Las clases Abstractas son la base de donde otras clases podrían derivarse
+- A diferencia de una `Interfaz` una clase abstracta puede implementar funciones para sus instancias
+- La palabra reservada es: `abstract`
+
+**Propiedades Estáticas y Propiedades de Solo Lectura**
+- Las clases por lo general definen atributos y métodos aplicables a las instancias de las mismas
+- A través de la palabra reservada `static` se puede definir un miembro visible a nivel de clase
+- Al igual que las `Interfaces`, podemos usar la palabra reservada `readonly` para marcar el miembro de una clase como solo lectura
+
+
+
 
 
 

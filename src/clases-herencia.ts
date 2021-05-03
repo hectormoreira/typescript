@@ -8,8 +8,8 @@ enum PhotoOrientation {
 }
 
 // Superclase
-class Item {
-  protected _id: number;
+abstract class Item {
+  protected readonly _id: number;
   protected _title: string;
 
   constructor(id: number, title: string) {
@@ -21,9 +21,10 @@ class Item {
     return this._id;
   }
 
-  set id(id: number) {
-    this._id = id;
-  }
+  // Error read-only
+  // set id(id: number) {
+  //   this._id = id;
+  // }
 
   get title() {
     return this._title;
@@ -37,6 +38,7 @@ class Item {
 // get y set
 
 class Picture extends Item {
+  public static photoOrientation = PhotoOrientation;
   // Propiedades
   private _orientation: PhotoOrientation;
 
@@ -67,7 +69,7 @@ class Album extends Item {
   private _pictures: Picture[];
 
   public constructor(id: number, title: string) {
-    super(id, title);
+    super(id, title); // Constructor de SUPER clase
     this._pictures = [];
   }
 
@@ -88,7 +90,14 @@ console.log("album", album);
 
 // Accediendo a los miembros publicos
 console.log("picture.id", picture.id); // get id()
-picture.id = 100; // private, set id(100)
+//picture.id = 100; // private, set id(100), read only
 picture.title = "Another title"; // private
 album.title = "Personal Activities"; //private
 console.log("album", album);
+
+// No permitido con clases abstractas
+// const item = new Item(1, "Test title");
+// console.log('item', item);
+
+// Probando static de Picture
+console.log('photoOrientation', Picture.photoOrientation.Landscape);
