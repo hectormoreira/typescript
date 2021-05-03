@@ -144,6 +144,10 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 **Métodos Set y Get**
 - TS Soporta los métodos accesores `get` y `set` como una forma de interceptar los accesos a los miembros privados de un objeto
 
+**Herencia de Clases y miembros protegidos**
+- TS soporta este patrón común en el mundo de la POO
+- Implementa la habilidad de extender código de clases existentes a través de la `herencia`
+
 
 
 
