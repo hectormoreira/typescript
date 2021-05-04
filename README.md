@@ -5,6 +5,8 @@ Notas del [Curso de Fundamentos de TypeScript](https://platzi.com/clases/typescr
 ```sh
 npm i -g typescript
 ```
+
+## Principales comandos
 - `npm i -g typescript` install compilador de TypeScript
 - `tsc -v` versión del compilador
 - `tsc` busca y compilar por defecto
@@ -12,6 +14,9 @@ npm i -g typescript
 - `tsc --watch` o `tsc --watch your_file.ts` Compilar de manera automática nuestros ficheros .ts activando un watch
 - `tsc --init` iniciar proyecto TS y crear archivo de configuración
 - `tsc src/type-null-undefined.ts --strictNullChecks` reporte de errores
+- `tsc --project folderName --watch` compilar por carpetas
+- `tsc --moduleResolution node` Módulos CommonJS o UMD, más opciones de configuración
+- `tsc --moduleResolution classic` Módulos AMD, System, ES2015, es poco configurable
 
 ## Notas
 ### Que es TypeScript
@@ -166,6 +171,17 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 - Generalmente se define un módulo con la idea de agrupar código relacionado
 - Podemos tomar criterios en torno a la funcionalidad, features, utilitarios, modelos, etc
 - Los miembros de módulo interactúan con el uso de las palabras reservadas `import` y `export`
+
+### Principio de responsabilidad única. SOLID
+- Idealmente un archivo deberia tener un proposito o responsabilidad unica: definir una clase, una interfaz, un enumerado, etc.
+- Esto mejora la legibilidad de codigo, facilita la lectura, testing y favorece su mantenimiento.
+- Utilizamos archivos separados y la utilizacion de import, export para lograr un poco mas de mantenibiilidad.
+- Podemos usar tambien carpetas para separar nuestros archivos.
+
+### Resolviendo Módulos
+- TS resuelve la ubicación de módulos observando referencias relativas y no relativas
+- Posteriormente intenta localizar el módulo usando una **estrategia de resolución de módulos**
+
 
 
 
