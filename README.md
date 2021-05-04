@@ -4,6 +4,8 @@ Notas del [Curso de Fundamentos de TypeScript](https://platzi.com/clases/typescr
 ## Dependencias
 ```sh
 npm i -g typescript
+npm i webpack webpack-cli --save-dev
+npm i ts-loader --save-dev
 ```
 
 ## Principales comandos
@@ -181,6 +183,11 @@ El archivo `tsconfig.json` es el que indica en un proyecto que se está trabajan
 ### Resolviendo Módulos
 - TS resuelve la ubicación de módulos observando referencias relativas y no relativas
 - Posteriormente intenta localizar el módulo usando una **estrategia de resolución de módulos**
+
+### Webpack y Agrupación de Módulos
+- Debemos generar package.json `npm init -y`
+- Instalar webpack `npm i webpack webpack-cli --save-dev`
+- instalar loader para TS `npm i ts-loader --save-dev`
 
 
 
